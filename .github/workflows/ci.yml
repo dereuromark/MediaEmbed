@@ -102,6 +102,6 @@ jobs:
 
       - name: Run link checker
         run: |
-          npm install -g markdown-link-check
+          sudo npm install -g markdown-link-check
           markdown-link-check README.md
           markdown-link-check docs/supported.md -p -c tests/link-check-config.json
